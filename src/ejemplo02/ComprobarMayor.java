@@ -1,6 +1,8 @@
 package ejemplo02;
 
- /*
+import java.util.Scanner;
+
+/*
   * Programa Java que compruebe de dos números enteros distintos cual es el
   * mayor y lo muestre por pantalla.
   */
@@ -13,10 +15,12 @@ public class ComprobarMayor {
 	    int numero1 = 0, numero2 = 0;	
 		// Datos de salida
 			
+	    Scanner teclado = new Scanner(System.in);
+	    
 		// ZONA DE INSTRUCCIONES
 	    // Simulamos leer datos de entrada
-	    numero1 = 20;
-	    numero2 = 400;
+	    numero1 = teclado.nextInt();
+	    numero2 = teclado.nextInt();
 	    
 	    // Condición
 	    if ( numero1 > numero2 ) {
@@ -29,6 +33,7 @@ public class ComprobarMayor {
 	    	System.out.println("Algo raro pasa!!!!");
 	    }
 	    
+	    teclado.close();
 	    System.out.println("Bye!!!!");
 	}
 }
