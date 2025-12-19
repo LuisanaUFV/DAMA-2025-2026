@@ -1,6 +1,8 @@
 package ejemplo04;
 
- /* Programa Java que dadas tres notas diferentes de un alumno, calcule el
+import java.util.Scanner;
+
+/* Programa Java que dadas tres notas diferentes de un alumno, calcule el
   * promedio e imprima alguno de los siguientes mensajes:
   * • Si el promedio es >=7 mostrar "Promocionado".
   * • Si el promedio es >=4 y <7 mostrar "Regular".
@@ -15,12 +17,15 @@ public class Promedio {
 		int nota1 = 0, nota2 = 0, nota3 = 0; 
 		// Datos de salida
 		float promedio = 0;
-		
+		Scanner teclado = new Scanner(System.in);
 		// ZONA DE INSTRUCCIONES
 		// Simulamos leer datos de entrada
-		nota1 = 2;
+	
+		System.out.println("Introduce la nota 1: ");
+		nota1 = teclado.nextInt();
 		nota2 = 9;
 		nota3 = 5;
+		
 		
 		// Calculamos el promedio
 		promedio = ( nota1 + nota2 + nota3 ) / 3;
@@ -39,7 +44,7 @@ public class Promedio {
 		}
 		
 		System.out.println("Bye!!!");
-		
+		teclado.close();
 		
 	}
 
