@@ -23,8 +23,9 @@ public class Promedio {
 	
 		System.out.println("Introduce la nota 1: ");
 		nota1 = teclado.nextInt();
-		nota2 = 9;
-		nota3 = 5;
+		System.out.println("Introduce la nota 2: ");
+		nota2 = teclado.nextInt();
+		
 		
 		
 		// Calculamos el promedio
