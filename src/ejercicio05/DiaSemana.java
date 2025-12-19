@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /*
   * Programa Java que determine el día de la semana en función de un número del 1 al 7
+  * MEJORAS EN COMENTARIOS !!! Día 18 DICIEMBRE 2025
   */
 public class DiaSemana {
 
